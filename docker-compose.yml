@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nest-db:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=nestdb
+    volumes:
+      - nest-db:/bitnami/postgresql
+
+ 
+volumes:
+    nest-db:
