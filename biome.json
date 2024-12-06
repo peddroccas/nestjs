@@ -9,6 +9,7 @@
     "lineWidth": 80
   },
   "javascript": {
+    "parser": { "unsafeParameterDecoratorsEnabled": true },
     "formatter": {
       "arrowParentheses": "asNeeded",
       "jsxQuoteStyle": "double",
@@ -30,6 +31,6 @@
     }
   },
   "files": {
-    "ignore": ["node_modules"]
+    "ignore": ["node_modules", "dist"]
   }
 }
