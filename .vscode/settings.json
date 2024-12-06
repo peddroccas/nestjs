@@ -2,6 +2,8 @@
   "symbols.files.associations": {
     "*.module.ts": "nest",
     "*.controller.ts": "nest",
-    "*.service.ts": "nest"
+    "*.service.ts": "nest",
+    "*.pipe.ts": "nest",
+    "*.dto.ts": "nest"
   }
 }
