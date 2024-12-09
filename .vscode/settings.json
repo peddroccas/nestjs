@@ -4,6 +4,8 @@
     "*.controller.ts": "nest",
     "*.service.ts": "nest",
     "*.pipe.ts": "nest",
-    "*.dto.ts": "nest"
+    "*.dto.ts": "nest",
+    "*.guard.ts": "nest",
+    "*.decorator.ts": "nest"
   }
 }
