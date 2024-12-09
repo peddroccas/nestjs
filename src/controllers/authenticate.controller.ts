@@ -1,14 +1,8 @@
-import {
-  ConflictException,
-  NotFoundException,
-  UnauthorizedException,
-  UsePipes,
-} from '@nestjs/common'
+import { UnauthorizedException, UsePipes } from '@nestjs/common'
 import { Body, Controller, HttpCode, Post } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
-import { compare, hash } from 'bcryptjs'
+import { compare } from 'bcryptjs'
 import { AuthenticateDTO, authenticateSchema } from 'src/DTOs/authenticate.dto'
-import { CreateAccountDTO, createAccountSchema } from 'src/DTOs/create-user.dto'
 import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe'
 import { PrismaService } from 'src/prisma/prisma.service'
 
