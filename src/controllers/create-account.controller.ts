@@ -1,9 +1,9 @@
 import { ConflictException, UsePipes } from '@nestjs/common'
 import { Body, Controller, HttpCode, Post } from '@nestjs/common'
 import { hash } from 'bcryptjs'
-import { CreateAccountDTO, createAccountSchema } from 'src/DTOs/create-user.dto'
-import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe'
-import { PrismaService } from 'src/prisma/prisma.service'
+import { CreateAccountDTO, createAccountSchema } from '@/DTOs/create-user.dto'
+import { ZodValidationPipe } from '@/pipes/zod-validation.pipe'
+import { PrismaService } from '@/prisma/prisma.service'
 
 @Controller('/accounts')
 export class CreateAccountController {

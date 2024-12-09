@@ -2,9 +2,9 @@ import { UnauthorizedException, UsePipes } from '@nestjs/common'
 import { Body, Controller, HttpCode, Post } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { compare } from 'bcryptjs'
-import { AuthenticateDTO, authenticateSchema } from 'src/DTOs/authenticate.dto'
-import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe'
-import { PrismaService } from 'src/prisma/prisma.service'
+import { AuthenticateDTO, authenticateSchema } from '@/DTOs/authenticate.dto'
+import { ZodValidationPipe } from '@/pipes/zod-validation.pipe'
+import { PrismaService } from '@/prisma/prisma.service'
 
 @Controller('/sessions')
 export class AuthenticateController {

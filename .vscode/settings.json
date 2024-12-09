@@ -6,6 +6,7 @@
     "*.pipe.ts": "nest",
     "*.dto.ts": "nest",
     "*.guard.ts": "nest",
-    "*.decorator.ts": "nest"
+    "*.decorator.ts": "nest",
+    "vitest.config.e2e.mts": "vitest"
   }
 }

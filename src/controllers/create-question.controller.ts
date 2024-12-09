@@ -6,15 +6,15 @@ import {
   UseGuards,
   UsePipes,
 } from '@nestjs/common'
-import { CurrentUser } from 'src/auth/current-user.decorator'
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard'
+import { CurrentUser } from '@/auth/current-user.decorator'
+import { JwtAuthGuard } from '@/auth/jwt-auth.guard'
 import {
   CreateQuestionDTO,
   createQuestionSchema,
-} from 'src/DTOs/create-question.dto'
-import { UserTokenDTO } from 'src/DTOs/user-token.dto'
-import { ZodValidationPipe } from 'src/pipes/zod-validation.pipe'
-import { PrismaService } from 'src/prisma/prisma.service'
+} from '@/DTOs/create-question.dto'
+import { UserTokenDTO } from '@/DTOs/user-token.dto'
+import { ZodValidationPipe } from '@/pipes/zod-validation.pipe'
+import { PrismaService } from '@/prisma/prisma.service'
 
 @Controller('/questions')
 @UseGuards(JwtAuthGuard)
