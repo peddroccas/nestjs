@@ -13,9 +13,10 @@ export class GetRecentQuestionsController {
   async handle(
     @Query('page', new ZodValidationPipe(pageQuerySchema)) page: PageQueryDTO
   ) {
+    const perPage = 20
     const questions = await this.db.question.findMany({
-      take: 1,
-      skip: page - 1,
+      take: perPage,
+      skip: (page - 1) * perPage,
       orderBy: { createdAt: 'desc' },
     })
 
